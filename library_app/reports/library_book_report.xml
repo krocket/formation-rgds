@@ -74,7 +74,7 @@
                     <ul class="list-unstyled">
                     <t t-foreach="o.author_ids" t-as="author">
                       <li class="media">
-                        <span t-field="author.image_small"
+                        <span t-field="author.image_1920"
                               t-options="{'widget': 'image'}" />
                         <div class="media-body">
                           <p class="mt-0">
