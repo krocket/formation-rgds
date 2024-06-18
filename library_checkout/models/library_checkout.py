@@ -7,7 +7,6 @@ class Checkout(models.Model):
     _inherit = ['mail.thread', 'mail.activity.mixin']
     _rec_name = 'request_date'
 
-    @api.multi
     def name_get(self):
         names = []
         for rec in self:
@@ -76,7 +75,6 @@ class Checkout(models.Model):
                 'Not allowed to create a checkout in the done state.')
         return new_record
 
-    @api.multi
     def write(self, vals):
         # Code before write: can use `self`, with the old values
         if 'stage_id' in vals:

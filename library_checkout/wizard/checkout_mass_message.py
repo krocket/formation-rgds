@@ -21,7 +21,6 @@ class CheckoutMassMessage(models.TransientModel):
         defaults['checkout_ids'] = checkout_ids
         return defaults
 
-    @api.multi
     def button_send(self):
         import pudb; pu.db
         self.ensure_one()

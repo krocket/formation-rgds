@@ -8,7 +8,6 @@ class Book(models.Model):
     isbn = fields.Char(help="Use a valid ISBN-13 or ISBN-10.")
     publisher_id = fields.Many2one(index=True)
 
-    @api.multi
     def _check_isbn(self):
         self.ensure_one()
         digits = [int(x) for x in self.isbn if x.isdigit()]
