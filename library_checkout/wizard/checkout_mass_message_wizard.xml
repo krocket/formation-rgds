@@ -26,7 +26,7 @@
 
   <act_window id="action_checkout_message"
     name="Send Messages"
-    src_model="library.checkout"
+    binding_model="library.checkout"
     res_model="library.checkout.massmessage"
     view_type="form"
     view_mode="form"
