@@ -4,6 +4,7 @@
   'author': 'Daniel Reis',
   'depends': [
     'library_checkout',
+    'web',
     'website',
   ],
   'data': [
