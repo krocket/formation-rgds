@@ -88,7 +88,7 @@ class Checkout(models.Model):
         # Code after write: can use `self`, with the updated values
         return True
 
-    member_image = fields.Binary(related='member_id.partner_id.image')
+    member_image = fields.Binary(related='member_id.partner_id.image_1920')
     num_other_checkouts = fields.Integer(
         compute='_compute_num_other_checkouts')
 
