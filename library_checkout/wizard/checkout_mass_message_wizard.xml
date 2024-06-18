@@ -28,10 +28,8 @@
     name="Send Messages"
     binding_model="library.checkout"
     res_model="library.checkout.massmessage"
-    view_type="form"
     view_mode="form"
     target="new"
-    multi="True"
     />
 
 </odoo>

@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/formation-rgds.iml" filepath="$PROJECT_DIR$/.idea/formation-rgds.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../../odoo_15/.idea/odoo_15.iml" filepath="$PROJECT_DIR$/../../../odoo_15/.idea/odoo_15.iml" />
     </modules>
   </component>
 </project>
