@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<odoo>
+    <record id="view_form_book" model="ir.ui.view">
+        <field name="name">Book form</field>
+        <field name="model">library.book.adu</field>
+        <field name="arch" type="xml">
+            <form string="Book">
+                <group>
+                    <field name="name" />
+                    <field name="author_ids" widget="many2many_tags" />
+                    <field name="publisher_id" />
+                    <field name="isbn" />
+                    <field name="image" widget="image" />
+                </group>
+            </form>
+        </field>
+    </record>
+</odoo>
