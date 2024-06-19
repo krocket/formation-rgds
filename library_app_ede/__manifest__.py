@@ -1,5 +1,5 @@
 {'name': 'Library EDE',
-'description': 'Bibliothèque de livres'
+'description': 'Bibliothèque de livres',
 'depends': ['base'],
 'author': 'edejean',
 'data': [],
