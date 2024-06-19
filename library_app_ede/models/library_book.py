@@ -8,5 +8,5 @@ class Book(models.Model):
     active = fields.Boolean(string='Active?', default=True)
     date_published = fields.Date()
     image = fields.Binary(string='Cover')
-    published_id = fields.Many2one('res.partner', string='Publisher')
+    publisher_id = fields.Many2one('res.partner', string='Publisher')
     authors_ids = fields.Many2many('res.partner', string='Authors')
