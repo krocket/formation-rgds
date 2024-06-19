@@ -3,7 +3,7 @@ class Book(models.Model):
     _name = 'library.book.ede'
     _description = 'Book'
 
-    name = fields.Char(strin='Title', required=True)
+    name = fields.Char(string='Title', required=True)
     isbn = fileds.Char(string='ISBN')
     active = fields.Boolean(string='Active?', default=True)
     date_published = fields.Date()
