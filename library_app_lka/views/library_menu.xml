@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
 <odoo>
     <menuitem id="library_menu_lka"
-              name="Library" />
+              name="Library lka" />
 </odoo>
