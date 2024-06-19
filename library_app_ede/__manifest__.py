@@ -4,6 +4,6 @@
 'author': 'edejean',
 'data': [],
 'demo': [],
-'application': 'True',
+'application': True,
 'installable': True,
 }
