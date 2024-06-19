@@ -8,4 +8,5 @@
  'demo': [],
  'application': True,
  'installable': True,
+ 'version': '15.0.1.0',
 }
