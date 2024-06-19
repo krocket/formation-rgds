@@ -2,4 +2,14 @@
 <odoo>
     <menuitem id="library_menu_lka"
               name="Library lka" />
+    <act_window id="action_library_book"
+        name="Library Books"
+        res_model="library.book.lka"
+        view_mode="tree,form, kanban"
+    />
+    <menuitem id="menu_library_book"
+        name="Book"
+        parent="library_menu_lka"
+        action="action_library_book"
+    />
 </odoo>
