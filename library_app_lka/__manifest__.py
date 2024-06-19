@@ -2,10 +2,8 @@
  'description': 'Librairie',
  'author': 'Laurent KAHL',
  'depends': ['base'],
- 'data': [
-  ],
- 'demo': [
-  ],
+ 'data': [],
+ 'demo': [],
  'application': True,
  'installable': True,
 }
