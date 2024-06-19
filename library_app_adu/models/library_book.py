@@ -1,5 +1,5 @@
 from odoo import fields, models
-form odoo.exceptions import UserError
+from odoo.exceptions import UserError
 
 class Book_ADU(models.Model):
     _name = 'library.book.adu'
@@ -30,3 +30,8 @@ class Book_ADU(models.Model):
             if book.isbn and not book._check_isbn():
                 raise UserError('Please provide an ISBN for %s' % book.name)
         return True
+
+    def write(self, vals):
+        records = super(book,self).write(vals)
+        for record in records:
+            record.button_check_isbn()
