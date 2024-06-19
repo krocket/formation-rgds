@@ -8,6 +8,7 @@
     """,
     'data': [
         'views/library_menu_sho.xml',
+        'views/library_views_sho.xml',
     ],
     'demo': [
     ],
