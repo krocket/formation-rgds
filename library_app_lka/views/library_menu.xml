@@ -5,7 +5,7 @@
     <act_window id="action_library_book"
         name="Library Books"
         res_model="library.book.lka"
-        view_mode="tree,form,kanban"
+        view_mode="tree,form"
     />
     <menuitem id="menu_library_book"
         name="Book"
