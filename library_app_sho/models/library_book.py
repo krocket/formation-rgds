@@ -1,5 +1,6 @@
 # function a+b
 from odoo import fields, models
+from odoo.exceptions import Warning
 
 
 class Book(models.Model):
