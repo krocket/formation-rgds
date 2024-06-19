@@ -11,7 +11,7 @@ class Book(models.Model):
     publisher_id = fields.Many2one('res.partner', string='Publisher')
     author_ids = fields.Many2many('res.partner', string='Authors')
 
-    def _check_isbn(self):
+    def button_check_isbn(self):
         self.ensure_one()
         digits = [int(x) for x in self.isbn if x.isdigit()]
         if len(digits) == 13:
