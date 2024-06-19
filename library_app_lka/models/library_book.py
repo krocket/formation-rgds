@@ -1,4 +1,5 @@
-from odoo import fields, models
+from odoo import api, fields, models
+from odoo.exceptions import Warning
 class Book(models.Model):
     _name = 'library.book.lka'
     _description = 'Book'
