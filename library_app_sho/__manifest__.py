@@ -10,4 +10,5 @@
     ],
     'demo': [
     ],
+    'application': True,
 }
