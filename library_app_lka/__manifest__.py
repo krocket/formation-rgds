@@ -3,7 +3,8 @@
  'author': 'Laurent KAHL',
  'depends': ['base'],
  'data': [
-'views/library_menu.xml',
+    'views/library_menu.xml',
+    'views/book_view.xml',
  ],
  'demo': [],
  'application': True,
