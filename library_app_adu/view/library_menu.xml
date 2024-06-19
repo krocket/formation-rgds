@@ -1,6 +1,6 @@
 <?xml version="1.0" ?>
 <odoo>
-    <menuitem id="menu_library_ADU" name="Library" />
+    <menuitem id="menu_library_ADU" name="Library ADU" />
 
     <!--action to open the book list-->
     <act_window id="action_library_book"
