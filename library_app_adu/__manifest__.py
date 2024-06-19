@@ -3,7 +3,9 @@
     "description": "La librairie du futur",
     "depends": ["base"],
     "author": "Alain DURINGER",
-    "data": [],
+    "data": [
+        "view/library_menu.xml"
+    ],
     "demo": [],
     "installable": True,
     "category": "Sales",
