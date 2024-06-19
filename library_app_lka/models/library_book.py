@@ -30,7 +30,4 @@ class Book(models.Model):
             raise UserError('%s is an invalid ISBN' % book.isbn)
       return True
 
-    def write(self, vals):
-        records = super("Book",self).write(vals)
-        for record in records:
-            record.button_check_isbn()
+    
