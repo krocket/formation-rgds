@@ -29,5 +29,14 @@ class Book(models.Model):
                 return True
     def write(self, vals):
         records = super(Book, self).write(vals)
-        for record in records:
-            record.butonn_check_isbn()
+        for val in vals:
+            if "isbn" in val:
+                digits = [int(x) for x in self.isbn if x.isdigit()]
+                if len(digits) == 13:
+                    ponderations = [1, 3] * 6
+                    terms = [a * b for a, b in zip(digits[:12], ponderations)]
+                    remain = sum(terms) % 10
+                    check = 10 - remain if remain != 0 else 0
+                    res = digits[-1] == check
+                    if not res:
+                        raise UserError(('%s is an invalid ISBN' % book.isbn))
