@@ -1,4 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.7 (stanleystella_v14)" project-jdk-type="Python SDK" />
+  <component name="Black">
+<<<<<<< HEAD
+    <option name="sdkName" value="Python 3.12" />
+  </component>
+  <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.12" project-jdk-type="Python SDK" />
+=======
+    <option name="sdkName" value="Python 3.9 (formation-rgds)" />
+  </component>
+  <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.9 (formation-rgds)" project-jdk-type="Python SDK" />
+>>>>>>> 2a33eebb4ee1225ed25a2b6d1399aecd7047187c
 </project>
