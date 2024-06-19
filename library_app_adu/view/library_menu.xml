@@ -1,4 +1,17 @@
 <?xml version="1.0" ?>
 <odoo>
     <menuitem id="menu_library_ADU" name="Library" />
+
+    <!--action to open the book list-->
+    <act_window id="action_library_book"
+                name="Library Books"
+                res_model="library.book.adu"
+                view_mode="tree,form,kanban"
+                />
+    <menuitem id="menu_library_book"
+                name="Books"
+                parent="menu_library_ADU"
+                action="action_library_book"
+                />
+
 </odoo>
