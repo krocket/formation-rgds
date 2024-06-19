@@ -6,5 +6,6 @@
     "data": [],
     "demo": [],
     "installable": True,
-    "category": "Sales"
+    "category": "Sales",
+    "application": True,
 }
