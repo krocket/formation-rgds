@@ -79,6 +79,22 @@ class Book(models.Model):
         search='_search_publisher_country',
     )
 
+    def write(self, vals):
+        records = super(Book, self).write(vals)
+        for val in vals:
+            if 'isbn' in val:
+                isbn = val.get('isbn', '')
+                digits = [int(x) for x in isbn if x.isdigit()]
+                if len(digits) == 13:
+                    ponderations = [1, 3] * 6
+                    terms = [a * b for a, b in zip(digits[:12], ponderations)]
+                    remain = sum(terms) % 10
+                    check = 10 - remain if remain != 0 else 0
+                    res = digits[-1] == check
+                    if not res:
+                        raise UserError('%s is an invalid ISBN' % isbn)
+        return records
+
     @api.depends('publisher_id.country_id')
     def _compute_publisher_country(self):
         for book in self:

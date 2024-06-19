@@ -11,3 +11,5 @@ class BooksExtended(Books):
             books = Book.search([('is_available', '=', True)])
             response.qcontext['books'] = books
         return response
+
+
