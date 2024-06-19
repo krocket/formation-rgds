@@ -9,6 +9,6 @@ class Book_ADU(models.Model):
     isbn = fields.Char(string='ISBN')
     active = fields.Boolean(string='Active?', default=True)
     date_published = fields.Date()
-    image = fields.binary(string='Cover')
+    image = fields.Binary(string='Cover')
     publisher_id = fields.Many2one('res.partner', string='Publisher')
     author_ids = fields.Many2many('res.partner', string='Authors')
