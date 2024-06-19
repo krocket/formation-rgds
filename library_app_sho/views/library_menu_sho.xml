@@ -1,15 +1,5 @@
 <odoo>
     <!-- Library App Menu -->
-    <menuitem id="menu_library_sho"
-              name="Library SHO" />
-    <!-- Action to open the Book List -->
-    <act_window id="action_library_book"
-                name="Library Books"
-                res_model="library.book.sho"
-                view_model="tree,form,kanban" />
-    <!-- Menu item to open the book list -->
-    <menuitem id="menu_library_book"
-              name="Books"
-              parent="menu_library_sho"
-              action="action_library_book" />
+    <menuitem id="menu_library_sho" name="Library SHO" />
+
 </odoo>
