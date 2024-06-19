@@ -1,6 +1,6 @@
 # function a+b
 from odoo import fields, models
-from odoo.exceptions import Warning
+from odoo.exceptions import UserError
 
 
 class Book(models.Model):
@@ -29,8 +29,8 @@ class Book(models.Model):
     def button_check_isbn(self):
         for book in self:
             if not book.isbn:
-                raise Warning('Please provide an ISBN for %s' % book.name)
+                raise UserError('Please provide an ISBN for %s' % book.name)
             if book.isbn and not book._check_isbn():
-                raise Warning('%s is not an valid ISBN' % book.isbn)
+                raise UserError('%s is not an valid ISBN' % book.isbn)
         return True
 
