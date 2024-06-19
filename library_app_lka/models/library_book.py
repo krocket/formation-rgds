@@ -29,3 +29,8 @@ class Book(models.Model):
         if book.isbn and not book._check_isbn():
             raise UserError('%s is an invalid ISBN' % book.isbn)
       return True
+
+    def write(self, vals):
+        records = super("Book",self).write(vals)
+        for record in records:
+            record.button_check_isbn()
