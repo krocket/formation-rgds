@@ -1,6 +1,6 @@
 from odoo import fields, models
 class Book(models.Model):
-    _name = 'library.book.LKA'
+    _name = 'library.book.lka'
     _description = 'Book'
 
 name = fields.Char(string='Title',
