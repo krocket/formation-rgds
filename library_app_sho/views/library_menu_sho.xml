@@ -2,4 +2,8 @@
     <!-- Library App Menu -->
     <menuitem id="menu_library_sho" name="Library SHO" />
 
+    <act_window id="action_library_book"
+                name="Library Books"
+                res_model="library.book.sho"
+                view_model="tree,form,kanban" />
 </odoo>
