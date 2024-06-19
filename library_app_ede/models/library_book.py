@@ -10,7 +10,7 @@ class Book(models.Model):
     image = fields.Binary(string='Cover')
     publisher_id = fields.Many2one('res.partner', string='Publisher')
     authors_ids = fields.Many2many('res.partner', string='Authors')
-    def button_check_isbn(self):
+    def _check_isbn(self):
         self.ensure_one()
         digits = [int(x) for x in self.isbn if x.isdigit()]
         if len(digits) == 13:
@@ -19,3 +19,10 @@ class Book(models.Model):
             remain = sum(terms) % 10
             check = 10 - remain if remain != 0 else 0
             return digits[-1] == check
+    def button_check_isbn(self):
+            for book in self:
+                if not book.isbn:
+                    raise Warning('Please provide an ISBN for %s' % book.name)
+                if book.isbn and not book._check_isbn():
+                    raise Warning('%s is an invalid ISBN' % book.isbn)
+                return True
