@@ -7,6 +7,7 @@
         Application Books SHO formation
     """,
     'data': [
+        'views/library_menu_sho.xml',
     ],
     'demo': [
     ],
