@@ -5,5 +5,10 @@
     <act_window id="action_library_book"
                 name="Library Books"
                 res_model="library.book.sho"
-                view_model="tree,form,kanban" />
+                view_mode="tree,form,kanban" />
+
+    <menuitem id="menu_library_book"
+              name="Books"
+              parent="menu_library_sho"
+              action="action_library_book" />
 </odoo>
