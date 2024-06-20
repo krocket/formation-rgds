@@ -71,8 +71,7 @@
               string="inActive"
               domain="[('active','=',False)]"/>
         <group expand="1" string="Group By">
-          <filter string="Author" context="{'group_by':'author_ids'}"/>
-          <filter string="Publisher" context="{'group_by':'publisher_id'}"/>
+          <filter string="Publisher" name="group_by_publisher_id" context="{'group_by':'publisher_id'}"/>
         </group>
       </search>
     </field>
