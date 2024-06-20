@@ -1,0 +1,10 @@
+{'name': 'Library Member EDE',
+ 'description': 'Bibliothèque de livres',
+ 'depends': ['library_app_ede'],
+ 'author': 'edejean',
+ 'data': [],
+ 'demo': [],
+ 'application': False,
+ 'installable': True,
+ 'version': '15.0.1.0',
+}
