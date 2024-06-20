@@ -51,7 +51,7 @@
     <tree>
       <field name="name"/>
       <field name="author_ids" widget="many2many_tags" />
-      <field name="publisher_id"/>
+      <field name="publisher_id" optional="hide"/>
       <field name="date_published" groups="sales_team.group_sale_manager"/>
     </tree>
   </field>
@@ -64,12 +64,16 @@
       <search>
       <field name="name"/>
       <field name="publisher_id"/>
-      <filter name="filter_inactive"
-              string="Inactive"
-              domain="[('active','=',True)]"/>
       <filter name="filter_active"
               string="Active"
+              domain="[('active','=',True)]"/>
+      <filter name="filter_inactive"
+              string="inActive"
               domain="[('active','=',False)]"/>
+        <group expand="1" string="Group By">
+          <filter string="Author" context="{'group_by':'author_ids'}"/>
+          <filter string="Publisher" context="{'group_by':'publisher_id'}"/>
+        </group>
       </search>
     </field>
   </record>
