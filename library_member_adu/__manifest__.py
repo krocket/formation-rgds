@@ -7,5 +7,5 @@
         'view/library_member_view.xml'
     ],
     "demo": [],
-    "version": "15.0.1.3"
+    "version": "15.0.1.4"
 }
