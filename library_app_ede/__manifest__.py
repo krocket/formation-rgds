@@ -10,5 +10,5 @@
  'demo': [],
  'application': True,
  'installable': True,
- 'version': '15.0.1.17',
+ 'version': '15.0.1.18',
 }
