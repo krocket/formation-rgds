@@ -1,7 +1,7 @@
 {'name': 'Library Management Application',
  'description': 'Library books, members and book borrowing.',
  'author': 'Daniel Reis',
- 'depends': ['base'],
+ 'depends': ['base','sales_team'],
  'data': [
     'security/library_security.xml',
     'security/ir.model.access.csv',
