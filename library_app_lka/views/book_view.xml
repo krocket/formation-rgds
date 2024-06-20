@@ -26,7 +26,7 @@
 
   <record id="view_tree_book" model="ir.ui.view">
     <field name="name">Book List</field>
-    <field name="model">library.book</field>
+    <field name="model">library.book.lka</field>
     <field name="arch" type="xml">
       <tree>
         <field name="name"/>
@@ -39,7 +39,7 @@
 
   <record id="view_search_book" model="ir.ui.view">
     <field name="name">Book Filters</field>
-    <field name="model">library.book</field>
+    <field name="model">library.book.lka</field>
     <field name="arch" type="xml">
       <search>
       <field name="publisher_id"/>
