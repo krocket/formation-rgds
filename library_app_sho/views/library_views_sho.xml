@@ -33,7 +33,7 @@
                 <field name="date_published" />
                 <field name="isbn" />
                 <field name="active" />
-                <field name="image" widget="image" optional="True"/>
+                <field name="image" widget="image" optional="hide"/>
             </tree>
         </field>
     </record>
