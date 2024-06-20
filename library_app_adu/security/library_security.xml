@@ -9,7 +9,7 @@
         <field name="name">User</field>
         <field name="category_id"
                ref="module_library_category_adu"/>
-        <field name="implies_ids"
+        <field name="implied_ids"
                eval="[(4,ref('base.group_user'))]" />
     </record>
 
@@ -18,7 +18,7 @@
         <field name="name">Manager</field>
         <field name="category_id"
                ref="module_library_category_adu"/>
-        <field name="implies_ids"
+        <field name="implied_ids"
                eval="[(4,ref('library_group_user'))]" />
     </record>
 
