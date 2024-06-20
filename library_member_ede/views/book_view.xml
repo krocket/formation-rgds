@@ -1,0 +1,27 @@
+<odoo>
+    <record id="view_from_book_extend" model="ir.ui.view">
+        <field name="name">Book: ass Is Available ? field</field>
+        <field name="model">library.book.ede</field>
+        <field name="inherit_id" ref="library_app_ede.view_form_book"/>
+        <field name="arch" type="xml">
+            <field name="isbn" position="after">
+                <field name="is_available" />
+            </field>
+        </field>
+    </record>
+
+    <record id="view_tree_book_inherit" model="ir.ui.view">
+        <field name="name">Book List</field>
+        <field name="model">library.book.ede</field>
+        <field name="inherit_id" ref="library_app_ede.view_tree_book"/>
+        <field name="arch" type="xml">
+             <field name="name" position="after">
+                <field name="is_available" />
+            </field>
+             <field name="publisher_id" position="attributes">
+                 <attribute name="invisible">1</attribute>
+            </field>
+        </field>
+    </record>
+
+</odoo>
