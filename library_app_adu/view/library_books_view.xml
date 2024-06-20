@@ -43,7 +43,16 @@
                 <field name="author_ids" widget="many2many_tags" />
                 <field name="publisher_id" />
                 <field name="date_published" />
+                <filter name="filter_active"
+                        string="Active"
+                        domain="[('active','=',True)]" />
+                <filter name="filter_inactive"
+                        string="Inactive"
+                        domain="[('active','=',False)]" />
             </search>
+            <group expand='1' string="Group by">
+                <filter string="Publisher" name="group_by_publisher" context="{'group_by':'publisher_id'}"/>
+            </group>
         </field>
     </record>
 
