@@ -2,7 +2,7 @@
 <odoo>
   <record id="view_form_book_extend" model="ir.ui.view">
     <field name="name">Book: add Is Available? field</field>
-    <field name="model">library.book</field>
+    <field name="model">library.book.lka</field>
     <field name="inherit_id" ref="library_app_lka.view_form_book"/>
     <field name="arch" type="xml">
       <field name="isbn" position="after">
