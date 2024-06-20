@@ -10,4 +10,19 @@
             </field>
         </field>
     </record>
+
+    <record id="view_list_book_extend" model="ir.ui.view">
+    <field name="name">Book: add Is Available? field</field>
+    <field name="model">library.book</field>
+    <field name="inherit_id" ref="library_app.view_tree_book"/>
+    <field name="arch" type="xml">
+
+      <field name="name" position="after">
+        <field name="is_available" />
+      </field>
+        <field name="publisher_id" position="attributes">
+            <attribute name="invisible">1</attribute>
+        </field>
+    </field>
+  </record>
 </odoo>
