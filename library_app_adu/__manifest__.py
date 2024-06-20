@@ -4,12 +4,13 @@
     "depends": ["base"],
     "author": "Alain DURINGER",
     "data": [
+        "security/library_security.xml",
         "view/library_books_view.xml",
-        "view/library_menu.xml"
+        "view/library_menu.xml",
     ],
     "demo": [],
     "installable": True,
     "category": "Sales",
     "application": True,
-    "version": "15.0.1.10"
+    "version": "15.0.1.11"
 }
