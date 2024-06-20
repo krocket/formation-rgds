@@ -49,10 +49,10 @@
                 <filter name="filter_inactive"
                         string="Inactive"
                         domain="[('active','=',False)]" />
+                <group>
+                    <filter string="Publisher" name="group_by_publisher" context="{'group_by':'publisher_id'}"/>
+                </group>
             </search>
-            <group expand='1' string="Group by">
-                <filter string="Publisher" name="group_by_publisher" context="{'group_by':'publisher_id'}"/>
-            </group>
         </field>
     </record>
 
