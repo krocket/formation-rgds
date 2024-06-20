@@ -3,7 +3,9 @@
     "description": "La gestion des membres de la librairie du futur",
     "depends": ["library_app_adu"],
     "author": "Alain DURINGER",
-    "data": [],
+    "data": [
+        'view/library_member_view.xml'
+    ],
     "demo": [],
-    "version": "15.0.1.0"
+    "version": "15.0.1.1"
 }
