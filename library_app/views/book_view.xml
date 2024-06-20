@@ -70,7 +70,7 @@
       <filter name="filter_inactive"
               string="inActive"
               domain="[('active','=',False)]"/>
-        <group expand="1" string="Group By">
+        <group expand="1" string="Group">
           <filter string="Publisher" name="group_by_publisher_id" context="{'group_by':'publisher_id'}"/>
         </group>
       </search>
