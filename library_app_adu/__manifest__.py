@@ -12,5 +12,5 @@
     "installable": True,
     "category": "Sales",
     "application": True,
-    "version": "15.0.1.11"
+    "version": "15.0.1.12"
 }
