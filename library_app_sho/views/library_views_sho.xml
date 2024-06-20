@@ -50,6 +50,9 @@
                 <field name="isbn" />
                 <filter name="filter_active" string="Active" domain="[('active','=',True)]" />
                 <filter name="filter_inactive" string="Inactive" domain="[('active','=',False)]" />
+                <group>
+                    <filter string="Publisher" name="group_by_publisher_id" context="{'group by':'publisher_id'}" />
+                </group>
             </search>
         </field>
     </record>
