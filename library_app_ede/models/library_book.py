@@ -39,4 +39,5 @@ class Book(models.Model):
                     check = 10 - remain if remain != 0 else 0
                     res = digits[-1] == check
                     if not res:
-                        raise UserError(('%s is an invalid ISBN' % book.isbn))
+                        raise UserError('%s is an invalid ISBN' % val.get("isbn", ""))
+        return records
