@@ -42,7 +42,7 @@
     <field name="model">library.book.lka</field>
     <field name="arch" type="xml">
       <search>
-      <field name="name"/>  
+      <field name="name"/>
       <field name="publisher_id"/>
       <filter name="filter_inactive"
               string="Inactive"
