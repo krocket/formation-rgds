@@ -1,7 +1,7 @@
 <?xml version="1.0" ?>
 <odoo>
   <record id="module_library_category" model="ir.module.category">
-    <field name="name">Library</field>
+    <field name="name">Library_ede</field>
   </record>
 
   <!-- Library User Group -->
